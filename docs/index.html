@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sound2Motion: Physics-based Simulation with Synthesized Impact Sounds">
+    <title>Sound2Motion</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Sound2Motion</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#paper">Paper</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#technical">Technical</a></li>
+                <li><a href="https://github.com/BANANASJIM/sound2motion" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero-title">Sound2Motion</h1>
+            <p class="hero-subtitle">Physics-Based Rigid Body Simulation with Impulse-Driven Sound Synthesis</p>
+            <div class="hero-buttons">
+                <a href="#results" class="btn btn-primary">View Results</a>
+                <a href="https://github.com/BANANASJIM/sound2motion" class="btn btn-secondary" target="_blank">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Sound2Motion simulates realistic rigid body physics using GPU-accelerated XPBD solver
+                        and synthesizes impact sounds from real recorded audio samples from the RealImpact dataset.
+                    </p>
+                    <p>
+                        Our system combines material-aware physics parameters with impulse-based sound synthesis
+                        to create physically plausible animations with synchronized audio.
+                    </p>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Newton Physics</h3>
+                        <p>GPU-accelerated XPBD solver via NVIDIA Warp</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Material-Aware</h3>
+                        <p>Ceramic, iron, wood, plastic, glass properties</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Sound Synthesis</h3>
+                        <p>Impulse-driven synthesis from RealImpact recordings</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>ML Integration</h3>
+                        <p>Diffusion model for audio-conditioned trajectories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper Section -->
+    <section id="paper" class="section">
+        <div class="container">
+            <h2 class="section-title">Paper and BibTeX</h2>
+
+            <div class="paper-container">
+                <!-- Paper Preview -->
+                <div class="paper-preview">
+                    <div class="paper-thumbnail">
+                        <img src="assets/images/paper-preview.png" alt="Sound2Motion Paper Preview">
+                    </div>
+                    <div class="paper-links">
+                        <a href="assets/paper.pdf" class="paper-link" target="_blank">[Paper]</a>
+                        <span class="paper-separator">|</span>
+                        <a href="assets/poster.pdf" class="paper-link" target="_blank">[Poster]</a>
+                    </div>
+                </div>
+
+                <!-- Citation Info -->
+                <div class="paper-info">
+                    <!-- BibTeX -->
+                    <div class="bibtex-section">
+                        <h3>BibTeX</h3>
+                        <pre class="bibtex-code"><code>@inproceedings{sound2motion2024,
+  author = {Your Name and Contributor Names},
+  title = {{Sound2Motion}: Audio-Conditioned Physics Trajectory Generation},
+  booktitle = {Proceedings of the Conference Name},
+  month = {Month},
+  year = {2024}
+}</code></pre>
+                    </div>
+
+                    <!-- Citation -->
+                    <div class="citation-section">
+                        <h3>Citation</h3>
+                        <p class="citation-text">
+                            Your Name, Contributor Names.
+                            <strong>Sound2Motion: Audio-Conditioned Physics Trajectory Generation</strong>
+                            Conference Name 2024.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="paper-note">
+                <em>Note: Update the citation information above with your actual paper details once published.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Results</h2>
+            <p class="section-subtitle">Simulation results with synthesized impact sounds</p>
+
+            <!-- Video Gallery -->
+            <div class="video-gallery">
+                <!-- Example video card - duplicate and modify for each result -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="assets/videos/3_CeramicKoiBowl_final.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3>Ceramic Koi Bowl</h3>
+                        <p>Material: Ceramic | Drop height: 0.8m | Duration: 5s</p>
+                    </div>
+                </div>
+
+                <!-- Add more video cards here -->
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="assets/videos/example2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3>Example Object 2</h3>
+                        <p>Material: Iron | Drop height: 1.2m | Duration: 5s</p>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls preload="metadata">
+                            <source src="assets/videos/example3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3>Example Object 3</h3>
+                        <p>Material: Wood | Drop height: 0.5m | Duration: 5s</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Audio Samples -->
+            <div class="audio-section">
+                <h3>Synthesized Impact Sounds</h3>
+                <div class="audio-grid">
+                    <div class="audio-card">
+                        <h4>Ceramic Impact</h4>
+                        <audio controls>
+                            <source src="assets/audio/ceramic_example.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-card">
+                        <h4>Metal Impact</h4>
+                        <audio controls>
+                            <source src="assets/audio/metal_example.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="audio-card">
+                        <h4>Wood Impact</h4>
+                        <audio controls>
+                            <source src="assets/audio/wood_example.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Section -->
+    <section id="technical" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Details</h2>
+
+            <div class="technical-grid">
+                <div class="technical-card">
+                    <h3>Physics Simulation</h3>
+                    <ul>
+                        <li>XPBD solver with 10 iterations</li>
+                        <li>120 FPS with 12 substeps</li>
+                        <li>Material-specific density and restitution</li>
+                        <li>Contact-aware collision detection</li>
+                    </ul>
+                </div>
+
+                <div class="technical-card">
+                    <h3>Sound Synthesis</h3>
+                    <ul>
+                        <li>Impulse detection (J = m × Δv)</li>
+                        <li>Volume scaling based on impulse magnitude</li>
+                        <li>Closest hit point selection from RealImpact</li>
+                        <li>Angle-based audio sample selection</li>
+                    </ul>
+                </div>
+
+                <div class="technical-card">
+                    <h3>ML Pipeline</h3>
+                    <ul>
+                        <li>Diffusion model for trajectory generation</li>
+                        <li>Audio conditioning via Mel spectrogram CNN</li>
+                        <li>MDM-style trajectory encoding (13D)</li>
+                        <li>Contact-aware loss weighting</li>
+                    </ul>
+                </div>
+
+                <div class="technical-card">
+                    <h3>Rendering</h3>
+                    <ul>
+                        <li>Blender 4.x (EEVEE/Cycles)</li>
+                        <li>1280×720 @ 60 FPS</li>
+                        <li>Z-up coordinate system</li>
+                        <li>ffmpeg audio/video combining</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="material-table">
+                <h3>Material Properties</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Density (kg/m³)</th>
+                            <th>Restitution</th>
+                            <th>Mass Scale</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron/Steel</td>
+                            <td>7870</td>
+                            <td>0.85</td>
+                            <td>×5</td>
+                        </tr>
+                        <tr>
+                            <td>Ceramic</td>
+                            <td>2400</td>
+                            <td>0.80</td>
+                            <td>×3</td>
+                        </tr>
+                        <tr>
+                            <td>Glass</td>
+                            <td>2500</td>
+                            <td>0.75</td>
+                            <td>×3</td>
+                        </tr>
+                        <tr>
+                            <td>Plastic</td>
+                            <td>1200</td>
+                            <td>0.70</td>
+                            <td>×2</td>
+                        </tr>
+                        <tr>
+                            <td>Wood</td>
+                            <td>600</td>
+                            <td>0.50</td>
+                            <td>×2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sound2Motion. All rights reserved.</p>
+            <p>
+                <a href="https://github.com/BANANASJIM/sound2motion" target="_blank">GitHub</a> |
+                <a href="#home">Back to Top</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

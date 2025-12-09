@@ -1,0 +1,47 @@
+{
+  "Nx": 64,
+  "Ny": 64,
+  "Nz": 64,
+  "cellsize": 0.005,
+  "FDTD_srate": 88200,
+  "shader_srate": 48000,
+  "blendrate": 100,
+  "ts": 0.0,
+  "tf": 1.0014148242630385,
+  "damping": 0.0,
+  "objects": {
+    "1. Object": {
+      "shader": "Modal",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshFile": "../Scenes/BallDrop/deformable_ball.tet.obj",
+      "animFile": "/home/jim_z/Dev/sound2motion/Scenes/BallDrop/deformable_ball_anim.txt",
+      "dataPrefix": "../Scenes/BallDrop/deformable_ball",
+      "material": "ABS Plastic"
+    },
+    "2. Ground": {
+      "shader": "Occluder",
+      "offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshFile": "../Scenes/BallDrop/ground.obj",
+      "animFile": ""
+    }
+  },
+  "listeners": {
+    "1. Main Listener": {
+      "format": "Mono",
+      "output": "deformable_ball_audio",
+      "position": [
+        0.126,
+        0.126,
+        0.126
+      ]
+    }
+  }
+}
