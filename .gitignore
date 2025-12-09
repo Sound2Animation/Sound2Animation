@@ -36,9 +36,10 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Dotfiles (except .gitignore)
+# Dotfiles (except .gitignore and .nojekyll)
 .*
 !.gitignore
+!.nojekyll
 
 # Project specific
 *.log
